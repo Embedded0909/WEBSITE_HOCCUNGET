@@ -52,9 +52,9 @@
         </section>
         <section class="flex_content nav_content" id="nav_content">
             <a href="#" class="active">Home</a>
-            <a href="https://www.facebook.com/profile.php?id=61566965671067">Gallery</a>
-            <a href="https://www.facebook.com/profile.php?id=61566965671067">Blogs</a>
-            <a href="https://www.facebook.com/profile.php?id=61566965671067" class="contact_btn">Contact us</a>
+            <a href="#">About</a>
+            <!-- <a href="https://www.facebook.com/profile.php?id=61566965671067">Blogs</a> -->
+            <!-- <a href="https://www.facebook.com/profile.php?id=61566965671067" class="contact_btn">Contact us</a> -->
 
         </section>
         <section class="flex_content">
@@ -113,7 +113,7 @@
         <!--division_3-->
         <div class="divisions division_3 padding_2x">
             <section class="title_header">
-                <h1 class="title">Seri Nổi Bật</h1>
+                <h1 class="title">Seri mất phí</h1>
                 <p>Sống là để học embedded hết mình </p>
                 <span class="bar"></span>
             </section>
@@ -126,17 +126,19 @@
                         </figure>
                         <article class="padding_1x">
                             <strong class="tag">STM32</strong>
-                            <a href="#" class="title small">STM32 BASIC - STM32F103C8T6</a>
-                            <p> Vi điều khiển STM32 cơ bản. <br>
+                            <a href="#" class="title small">STM32 THANH GHI</a>
+                            <div class="price-tag">
+                                <span class="old-price">1.200.000₫</span>
+                                <span class="new-price">360.000₫</span>
+                            </div>
+                            <p> Vi điều khiển STM32 thanh ghi. <br>
                                 - Ngoại vi <br>
                                 - Sensor,...
 
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <a class="btn_donxem"
-                                        href="https://www.youtube.com/playlist?list=PLbQ6BBf-QSJyMTHJihioiEOWs-FG2YxXa">
-                                        Đón xem</a>
+                                    <div class="btn_donxem" onclick="toggleInfo('info1', this)">Xem thông tin</div>
                                 </span>
                             </aside>
                         </article>
@@ -149,17 +151,21 @@
                         </figure>
                         <article class="padding_1x">
                             <strong class="tag">STM32</strong>
-                            <a href="#" class="title small">STM32 ADVANCE - STM32F103C8T6</a>
-                            <p> Vi điều khiển STM32 Nâng Cao. <br>
-                                - DMA <br>
-                                - Bootloader,...
+                            <a href="#" class="title small">ESP32 ESP-IDF</a>
+                            <div class="price-tag">
+                                <span class="old-price">1.000.000₫</span>
+                                <span class="new-price">300.000₫</span>
+                            </div>
+                            <p> Vi điều khiển ESP32. <br>
+                                - ESP-IDF <br>
+                                - I2S, WIFI, BLE...
 
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <a class="btn_donxem"
-                                        href="https://www.youtube.com/playlist?list=PLbQ6BBf-QSJxbv84cOCSV0LO3riGbzJfk">
-                                        Đón xem</a>
+                                    <div class="btn_donxem" onclick="toggleInfo('info2', this)">Xem thông tin</div>
+
+
                                 </span>
                             </aside>
                         </article>
@@ -172,70 +178,58 @@
                         </figure>
                         <article class="padding_1x">
                             <strong class="tag">STM32</strong>
-                            <a href="#" class="title small">STM32 RTOS - STM32F103C8T6</a>
-                            <p> Kiến thức RTOS - FreeRTOS. <br>
-                                - Task, Scheduler <br>
-                                - Context Switching,...
+                            <a href="#" class="title small">RASPI 3B</a>
+                            <div class="price-tag">
+                                <span class="old-price">800.000₫</span>
+                                <span class="new-price">200.000₫</span>
+                            </div>
+                            <p> Kiến thức RASPI - CƠ BẢN <br>
+                                - SSH, REMOTE <br>
+                                - GPIO, I2C, SERVER...
 
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <a class="btn_donxem"
-                                        href="https://www.youtube.com/playlist?list=PLbQ6BBf-QSJyoc-Hbt1Nv-zi9xUheA9_t">
-                                        Đón xem</a>
+                                    <div class="btn_donxem" onclick="toggleInfo('info3', this)">Xem thông tin</div>
                                 </span>
                             </aside>
                         </article>
                     </li>
-                    <!--card ends-->
-                    <!--card begining-->
-                    <li>
-                        <figure>
-                            <img src="images/c embedded.png" alt="" loading="lazy" />
-                        </figure>
-                        <article class="padding_1x">
-                            <strong class="tag">C EMBEDDED</strong>
-                            <a href="#" class="title small">C Embedded</a>
-                            <p>Kiến thức C trong lập trình nhúng <br>
-                                - Struct, Union <br>
-                                - Pointer,...
 
-                            </p>
-                            <aside class="fixed_flex">
-                                <span class="flex-content">
-                                    <a class="btn_donxem"
-                                        href="https://www.youtube.com/playlist?list=PLbQ6BBf-QSJzOQqON0nawhk-9r2CpsKyy">
-                                        Đón xem</a>
-                                </span>
-                            </aside>
-                        </article>
-                    </li>
-                    <!--card ends-->
-                    <!--card begining-->
-                    <li>
-                        <figure>
-                            <img src="images/makefile.png" alt="" loading="lazy" />
-                        </figure>
-                        <article class="padding_1x">
-                            <strong class="tag">MAKEFILE</strong>
-                            <a href="#" class="title small">MakeFile</a>
-                            <p> Kiến thức về MakeFile. <br>
-                                - Gcc, <br>
-                                - Sensor,...
-                            </p>
-                            <aside class="fixed_flex">
-                                <span class="flex-content">
-                                    <a class="btn_donxem"
-                                        href="https://www.youtube.com/playlist?list=PLbQ6BBf-QSJwjnLCxxZioumIBd3HKZSXY">
-                                        Đón xem</a>
-                                </span>
-                            </aside>
-                        </article>
-                    </li>
-                    <!--card ends-->
                 </ul>
             </section>
         </div>
+
+
+
+        <h2>📚 Danh sách khóa học</h2>
+        <!-- <button onclick="toggleInfo('info1', this)">Xem thông tin</button> -->
+        <div id="info1" class="info">
+            <p>Giới thiệu lập trình nhúng với STM32.</p>
+            <p>Thời lượng: 8 tuần.</p>
+            <p>Nội dung: Biến, con trỏ, GPIO, UART, I2C, SPI, FreeRTOS,...</p>
+        </div>
+
+
+
+
+        <!-- <button onclick="toggleInfo('info2', this)">Xem thông tin</button> -->
+        <div id="info2" class="info">
+            <p>Tập trung vào task, queue, semaphore, event group, timer.</p>
+            <p>Thời lượng: 6 tuần.</p>
+            <p>Yêu cầu: đã hoàn thành Embedded C cơ bản.</p>
+        </div>
+
+
+
+        <!-- <button onclick="toggleInfo('info3', this)">Xem thông tin</button> -->
+        <div id="info3" class="info">
+            <p>Kết nối WiFi, MQTT, Firebase, OTA update,...</p>
+            <p>Thời lượng: 8 tuần.</p>
+            <p>Yêu cầu: kiến thức C và lập trình vi điều khiển cơ bản.</p>
+        </div>
+
+
 
         <!--division_4-->
         <div class="divisions division_4" onmousemove="animate_balls(event)">
@@ -464,4 +458,10 @@
         autoplaySpeed: 4000,
         infinite: true
     });
+    function toggleInfo(id, btn) {
+        const info = document.getElementById(id);
+        const isHidden = info.style.display === "none" || info.style.display === "";
+        info.style.display = isHidden ? "block" : "none";
+        btn.textContent = isHidden ? "Ẩn thông tin" : "Xem thông tin";
+    }
 </script>

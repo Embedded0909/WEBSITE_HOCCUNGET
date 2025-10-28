@@ -131,7 +131,8 @@ h6 {
     width: 100%;
     position: relative;
 }
-.flex_content image{
+
+.flex_content image {
     border: 5px solid red;
 }
 
@@ -830,6 +831,25 @@ header article {
     padding: 8rem 2rem;
 }
 
+.price-tag {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 header article .title {
     font-weight: 700;
 }
@@ -1099,15 +1119,7 @@ header section aside:nth-child(3) {
     margin: auto;
 }
 
-.division_3:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: #f2f2f2;
-}
+
 
 .division_3 .title_header {
     margin: 0;
@@ -1795,14 +1807,24 @@ header section aside:nth-child(3) {
         opacity: 0.0;
     }
 }
-.btn_donxem{
+
+.btn_donxem {
     background-color: #002347;
     padding: 2px 10px;
     border-radius: 5px;
     color: #ddd !important;
 }
-.btn_donxem:hover{
+
+.btn_donxem:hover {
     padding: 2px 11px;
     background-color: #000000;
     color: #ddd !important;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
 }
