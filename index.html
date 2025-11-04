@@ -26,7 +26,7 @@
             </a>
             <a href="https://www.facebook.com/profile.php?id=61566965671067">
                 <i class="fa fa-headphones"></i>
-                0348741638
+                0123456789
             </a>
         </section>
         <section class="flex_content">
@@ -138,7 +138,7 @@
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <div class="btn_donxem" onclick="toggleInfo('info1', this)">Xem thông tin</div>
+                                    <div class="btn_donxem">Xem thông tin</div>
                                 </span>
                             </aside>
                         </article>
@@ -147,14 +147,14 @@
                     <!--card begining-->
                     <li>
                         <figure>
-                            <img src="images/stm32 nang cao.png" alt="" loading="lazy" />
+                            <img src="images/esp.jpg" alt="" loading="lazy" />
                         </figure>
                         <article class="padding_1x">
-                            <strong class="tag">STM32</strong>
+                            <strong class="tag">ESP32 IDF</strong>
                             <a href="#" class="title small">ESP32 ESP-IDF</a>
                             <div class="price-tag">
                                 <span class="old-price">1.000.000₫</span>
-                                <span class="new-price">300.000₫</span>
+                                <span class="new-price">270.000₫</span>
                             </div>
                             <p> Vi điều khiển ESP32. <br>
                                 - ESP-IDF <br>
@@ -163,7 +163,7 @@
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <div class="btn_donxem" onclick="toggleInfo('info2', this)">Xem thông tin</div>
+                                    <div class="btn_donxem">Xem thông tin</div>
 
 
                                 </span>
@@ -174,14 +174,14 @@
                     <!--card begining-->
                     <li>
                         <figure>
-                            <img src="images/RTOS - STM32.png" alt="" loading="lazy" />
+                            <img src="images/pi.jpg" alt="" loading="lazy" />
                         </figure>
                         <article class="padding_1x">
-                            <strong class="tag">STM32</strong>
+                            <strong class="tag">RASPI 3B</strong>
                             <a href="#" class="title small">RASPI 3B</a>
                             <div class="price-tag">
                                 <span class="old-price">800.000₫</span>
-                                <span class="new-price">200.000₫</span>
+                                <span class="new-price">60.000₫</span>
                             </div>
                             <p> Kiến thức RASPI - CƠ BẢN <br>
                                 - SSH, REMOTE <br>
@@ -190,7 +190,7 @@
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <div class="btn_donxem" onclick="toggleInfo('info3', this)">Xem thông tin</div>
+                                    <div class="btn_donxem">Xem thông tin</div>
                                 </span>
                             </aside>
                         </article>
@@ -202,32 +202,32 @@
 
 
 
-        <h2>📚 Danh sách khóa học</h2>
+        <!-- <h2>📚 Danh sách khóa học</h2> -->
         <!-- <button onclick="toggleInfo('info1', this)">Xem thông tin</button> -->
-        <div id="info1" class="info">
+        <!-- <div id="info1" class="info">
             <p>Giới thiệu lập trình nhúng với STM32.</p>
             <p>Thời lượng: 8 tuần.</p>
             <p>Nội dung: Biến, con trỏ, GPIO, UART, I2C, SPI, FreeRTOS,...</p>
-        </div>
+        </div> -->
 
 
 
 
         <!-- <button onclick="toggleInfo('info2', this)">Xem thông tin</button> -->
-        <div id="info2" class="info">
+        <!-- <div id="info2" class="info">
             <p>Tập trung vào task, queue, semaphore, event group, timer.</p>
             <p>Thời lượng: 6 tuần.</p>
             <p>Yêu cầu: đã hoàn thành Embedded C cơ bản.</p>
-        </div>
+        </div> -->
 
 
 
         <!-- <button onclick="toggleInfo('info3', this)">Xem thông tin</button> -->
-        <div id="info3" class="info">
+        <!-- <div id="info3" class="info">
             <p>Kết nối WiFi, MQTT, Firebase, OTA update,...</p>
             <p>Thời lượng: 8 tuần.</p>
             <p>Yêu cầu: kiến thức C và lập trình vi điều khiển cơ bản.</p>
-        </div>
+        </div> -->
 
 
 
@@ -462,6 +462,6 @@
         const info = document.getElementById(id);
         const isHidden = info.style.display === "none" || info.style.display === "";
         info.style.display = isHidden ? "block" : "none";
-        btn.textContent = isHidden ? "Ẩn thông tin" : "Xem thông tin";
+        //btn.textContent = isHidden ? "Ẩn thông tin" : "Xem thông tin";
     }
 </script>
