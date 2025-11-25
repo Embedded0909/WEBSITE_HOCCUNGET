@@ -109,7 +109,21 @@
 
         <!--division_2-->
 
+        <div class="sale-box">
+            <div class="sale-title">🔥 FLASH SALE ĐANG DIỄN RA</div>
 
+            <div class="countdown">
+                Chỉ còn <span id="timer">01:50:00</span>
+            </div>
+
+            <div class="price">
+                🎁 Full combo 3 khóa học chỉ còn
+                <span class="highlight">500.000đ</span>
+            </div>
+            <a class="sale-btn"
+                href="https://docs.google.com/document/d/1F9IOTxnuxngKDMIwoT7batGmxgGLp0Ep3HelKVrfyds/edit?tab=t.0"
+                target="_blank">Đăng Ký Ngay</a>
+        </div>
         <!--division_3-->
         <div class="divisions division_3 padding_2x">
             <section class="title_header">
@@ -138,8 +152,8 @@
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <a href="https://docs.google.com/document/d/1F9IOTxnuxngKDMIwoT7batGmxgGLp0Ep3HelKVrfyds/edit?tab=t.0" target="_blank"
-                                        class="btn_donxem">
+                                    <a href="https://docs.google.com/document/d/1F9IOTxnuxngKDMIwoT7batGmxgGLp0Ep3HelKVrfyds/edit?tab=t.0"
+                                        target="_blank" class="btn_donxem">
                                         Đăng Ký
                                     </a>
                                 </span>
@@ -166,8 +180,8 @@
                             </p>
                             <aside class="fixed_flex">
                                 <span class="flex-content">
-                                    <a href="https://docs.google.com/document/d/1HOPOQHdqMZx1jNVYOVro3caNT8Diox2ILgdcb6J4mbI/edit?tab=t.0" target="_blank"
-                                        class="btn_donxem">
+                                    <a href="https://docs.google.com/document/d/1HOPOQHdqMZx1jNVYOVro3caNT8Diox2ILgdcb6J4mbI/edit?tab=t.0"
+                                        target="_blank" class="btn_donxem">
                                         Đăng ký
                                     </a>
 
@@ -470,4 +484,23 @@
         info.style.display = isHidden ? "block" : "none";
         //btn.textContent = isHidden ? "Ẩn thông tin" : "Xem thông tin";
     }
+    // 1 giờ 50 phút = 6600 giây
+    let timeLeft = 1 * 3600 + 50 * 60;
+
+    function updateTimer() {
+        let hours = Math.floor(timeLeft / 3600);
+        let minutes = Math.floor((timeLeft % 3600) / 60);
+        let seconds = timeLeft % 60;
+
+        document.getElementById("timer").innerHTML =
+            `${String(hours).padStart(2, '0')}:` +
+            `${String(minutes).padStart(2, '0')}:` +
+            `${String(seconds).padStart(2, '0')}`;
+
+        if (timeLeft > 0) {
+            timeLeft--;
+        }
+    }
+
+    setInterval(updateTimer, 1000);
 </script>
